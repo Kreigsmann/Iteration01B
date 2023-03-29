@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @sword.type %>
+</p>
+
+<p>
+  <strong>Subtype:</strong>
+  <%= @sword.subtype %>
+</p>
+
+<p>
+  <strong>Pommel:</strong>
+  <%= @sword.pommel %>
+</p>
+
+<p>
+  <strong>Grip:</strong>
+  <%= @sword.grip %>
+</p>
+
+<p>
+  <strong>Steel:</strong>
+  <%= @sword.steel %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sword.description %>
+</p>
+
+<%= link_to 'Edit', edit_sword_path(@sword) %> |
+<%= link_to 'Back', swords_path %>
