@@ -1,17 +1,88 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Swords</h1>
+<h1 style="font-family: Old English Text MT"> Teutonic Armory</h1>
+
+<p>"We have three sword types that are designed from the Oakshott Typology of swords: Type XV,
+Type XVI, and Type XVII. The subtypes we offer are 1 and 2. 
+We offer pommels that are disc shaped, faceted plum shaped, and fish tail shaped. 
+For the grip we offer chord or leather. Our steel types are either medium or high carbon
+"</p>
+
+<style>
+        .button1 {
+            background-color: red;
+            border: 2px solid white;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px 30px;
+            cursor: pointer;
+            text-decoration:none;
+        }
+</style>
+
+<div class="container">
+  <h2 style="font-family: Old English Text MT">Type</h2>
+  <p>
+  'We have three sword types that are designed from the Oakshott Typology of swords: Type XV,
+  Type XVI, and Type XVII.'
+  <br>
+  <a class="button1">
+  More Info
+  </a>
+  </p>
+</div>
+
+<div class="container">
+  <h2 style="font-family: Old English Text MT">Subtype</h2>
+  <p>
+  'The subtypes we offer are 1 and 2.'
+  <br>
+  <a class="button1">
+  More Info
+  </a>
+  </p>
+</div>
+
+<div class="container">
+  <h2 style="font-family: Old English Text MT">Pommel</h2>
+  <p>
+   'We offer pommels that are disc shaped, faceted plum shaped, and fish tail shaped.'
+   <br>
+   <a class="button1">
+   More Info
+   </a>
+  </p>
+</div>
+
+<div class="container">
+  <h2 style="font-family: Old English Text MT">Grip</h2>
+  <p>
+ 'For the grip we offer chord or leather.'
+ <br>
+ <a class="button1">
+ More Info
+ </a>
+  </p>
+</div>
+
+<div class="container">
+  <h2 style="font-family: Old English Text MT">Steel</h2>
+  <p>
+ 'Our steel types are either medium or high carbon'
+ <br>
+ <a class="button1">
+ More Info
+ </a>
+  </p>
+</div>
 
 <table>
   <thead>
     <tr>
-      <th>Type</th>
-      <th>Subtype</th>
-      <th>Pommel</th>
-      <th>Grip</th>
-      <th>Steel</th>
-      <th>Description</th>
-      <th colspan="3"></th>
+
     </tr>
   </thead>
 
@@ -33,5 +104,5 @@
 </table>
 
 <br>
-
+<p>'Click hear to customize your own sword!'</p>
 <%= link_to 'New Sword', new_sword_path %>
