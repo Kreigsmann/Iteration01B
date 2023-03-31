@@ -1,16 +1,30 @@
 <p id="notice"><%= notice %></p>
 
 <h1 style="font-family: Old English Text MT"> Teutonic Armory</h1>
-
-<p>"We have three sword types that are designed from the Oakshott Typology of swords: Type XV,
-Type XVI, and Type XVII. The subtypes we offer are 1 and 2. 
-We offer pommels that are disc shaped, faceted plum shaped, and fish tail shaped. 
-For the grip we offer chord or leather. Our steel types are either medium or high carbon
-"</p>
+<br>
+<img src="https://i.pinimg.com/474x/68/1b/6a/681b6ae8f53a15eb019bd8ab7c8188c6--knights-hospitaller-knights-templar.jpg">
+<br>
+<p><font size="3">"The Teutonic Armory offers high quality swords that can be customized to fit any 
+user specifications. All of our swords are handmade and model real world swords from the
+Oakshott Typology.
+"</font></p>
 
 <style>
         .button1 {
             background-color: red;
+            border: 2px solid white;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px 30px;
+            cursor: pointer;
+            text-decoration:none;
+        }
+
+        .button2 {
+            background-color: yellow;
             border: 2px solid white;
             color: white;
             padding: 5px 10px;
@@ -26,11 +40,12 @@ For the grip we offer chord or leather. Our steel types are either medium or hig
 <div class="container">
   <h2 style="font-family: Old English Text MT">Type</h2>
   <p>
-  'We have three sword types that are designed from the Oakshott Typology of swords: Type XV,
+  <font size="3">'We have three sword types that are designed from the Oakshott Typology of swords: Type XV,
   Type XVI, and Type XVII.'
+  </font>
   <br>
-  <a class="button1">
-  <strong>More Info >></strong>
+  <a href="types.html" class="button1">
+  <strong>More Info<strong>
   </a>
   </p>
 </div>
@@ -38,30 +53,30 @@ For the grip we offer chord or leather. Our steel types are either medium or hig
 <div class="container">
   <h2 style="font-family: Old English Text MT">Subtype</h2>
   <p>
-  'The subtypes we offer are 1 and 2.'
+  <font size="3">'The subtypes we offer are 1 and 2.'</font>
   <br>
   <a class="button1">
-  <strong>More Info >></strong>  </a>
+  <strong>More Info<strong>  </a>
   </p>
 </div>
 
 <div class="container">
   <h2 style="font-family: Old English Text MT">Pommel</h2>
   <p>
-   'We offer pommels that are disc shaped, faceted plum shaped, and fish tail shaped.'
+   <font size="3">'We offer pommels that are disc shaped, faceted plum shaped, and fish tail shaped.'</font>
    <br>
    <a class="button1">
-   <strong>More Info >></strong>   </a>
+   <strong>More Info<strong>   </a>
   </p>
 </div>
 
 <div class="container">
   <h2 style="font-family: Old English Text MT">Grip</h2>
   <p>
- 'For the grip we offer chord or leather.'
+ <font size="3">'For the grip we offer chord or leather.'</font>
  <br>
  <a class="button1">
- <strong>More Info >></strong>
+ <strong>More Info<strong>
   </a>
   </p>
 </div>
@@ -69,10 +84,10 @@ For the grip we offer chord or leather. Our steel types are either medium or hig
 <div class="container">
   <h2 style="font-family: Old English Text MT">Steel</h2>
   <p>
- 'Our steel types are either medium or high carbon'
+ <font size="3">'Our steel types are either medium or high carbon'</font>
  <br>
  <a class="button1">
- <strong>More Info >></strong>
+ <strong>More Info<strong>
   </a>
   </p>
 </div>
@@ -93,14 +108,21 @@ For the grip we offer chord or leather. Our steel types are either medium or hig
         <td><%= sword.grip %></td>
         <td><%= sword.steel %></td>
         <td><%= sword.description %></td>
-        <td><%= link_to 'Show', sword %></td>
-        <td><%= link_to 'Edit', edit_sword_path(sword) %></td>
-        <td><%= link_to 'Destroy', sword, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><h3 style="border:gold; border-width:5px; border-style:solid;"><font size="3"><strong><%= link_to 'Show', sword %><strong></font></h3></td>
+        <td><h3 style="border:black; border-width:5px; border-style:solid;"><font size="3"><strong><%= link_to 'Edit', edit_sword_path(sword) %><strong></font></h3></td>
+        <td><h3 style="border:red; border-width:5px; border-style:solid;"><font size="3"><strong><%= link_to 'Destroy', sword, method: :delete, data: { confirm: 'Are you sure?' } %><strong></font></h3></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-<p><strong>Click hear to customize your own sword!<strong></p>
+<font size="5">
+<strong>
+<h3 style="border:green; border-width:5px; border-style:solid;">
+<center>
 <%= link_to 'New Sword', new_sword_path %>
+</center>
+</h3>
+</strong>
+</font>
