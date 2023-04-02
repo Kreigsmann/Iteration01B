@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<h1 style="font-family: Old English Text MT">Your Items</h1>
+<br>
 <p style="font-family: Old English Text MT">
   <strong><font size="5">Type:</font></strong>
   <%= @sword.type %>
@@ -30,5 +32,7 @@
   <%= @sword.description %>
 </p>
 
+<strong>
 <%= link_to 'Edit', edit_sword_path(@sword) %> |
 <%= link_to 'Back', swords_path %>
+<strong>
