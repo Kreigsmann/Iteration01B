@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1 style="font-family: Old English Text MT">Your Items</h1>
+<img src="https://www.darksword-armory.com/wp-content/uploads/2016/05/darksword-armory-medieval-swords-image-768x517.jpg">
 <br>
 <p style="font-family: Old English Text MT">
   <strong><font size="5">Type:</font></strong>
@@ -32,7 +33,9 @@
   <%= @sword.description %>
 </p>
 
+<h3 style="border:gold; border-width:5px; border-style:solid;">
 <strong>
 <%= link_to 'Edit', edit_sword_path(@sword) %> |
 <%= link_to 'Back', swords_path %>
 <strong>
+</h3>
