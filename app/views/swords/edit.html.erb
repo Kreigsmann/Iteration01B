@@ -4,11 +4,9 @@
 
 <%= render 'form', sword: @sword %>
 
-<h3 style="border:gold; border-width:5px; border-style:solid;">
 <font size="5">
 <strong>
-<%= link_to 'Show', @sword %> |
-<%= link_to 'Back', swords_path %>
+<%= button_to 'Show', @sword, style: 'background-color: gold; color: white;', method: :get %>
+<%= button_to 'Back', swords_path, style: 'background-color: blue; color: white;', method: :get %>
 </strong>
 </font>
-</h3>

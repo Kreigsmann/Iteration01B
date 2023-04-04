@@ -3,10 +3,8 @@
 <br>
 <%= render 'form', sword: @sword %>
 
-<h3 style="border:red; border-width:5px; border-style:solid;">
 <font size="5">
 <strong>
-<%= link_to 'Back', swords_path %>
+<%= button_to 'Back', swords_path, style:'background-color: red; color: white;', method: :get %>
 </strong>
 </font>
-</h3>

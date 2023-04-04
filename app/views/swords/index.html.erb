@@ -147,21 +147,20 @@ Oakshott Typology.
         <td><%= sword.grip %></td>
         <td><%= sword.steel %></td>
         <td><%= sword.description %></td>
-        <td><h3 style="border:gold; border-width:5px; border-style:solid;"><font size="5"><strong><%= link_to 'Show', sword %><strong></font></h3></td>
-        <td><h3 style="border:black; border-width:5px; border-style:solid;"><font size="5"><strong><%= link_to 'Edit', edit_sword_path(sword) %><strong></font></h3></td>
-        <td><h3 style="border:red; border-width:5px; border-style:solid;"><font size="5"><strong><%= link_to 'Destroy', sword, method: :delete, data: { confirm: 'Are you sure?' } %><strong></font></h3></td>
+        <td><font size="5"><strong><%= button_to 'Show', sword, style: 'background-color: green; color: white; font-size: 24px; padding: 12px 24px;', method: :get %><strong></font></td>
+        <td><font size="5"><strong><%= button_to 'Edit', edit_sword_path(sword),style:'background-color: gold; color: white; font-size: 24px; padding: 12px 24px;', method: :get %><strong></font></td>
+        <td><font size="5"><strong><%= button_to 'Destroy', sword, style: 'background-color: red; color: white; font-size: 24px; padding: 12px 24px;', method: :delete, data: { confirm: 'Are you sure?' } %><strong></font></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+
 <br>
 <font size="5">
 <strong>
-<h3 style="border:green; border-width:5px; border-style:solid;">
 <center>
-<%= link_to 'New Sword', new_sword_path %>
+<%= button_to 'New Sword', new_sword_path, class:"button1", method: :get %>
 </center>
-</h3>
 </strong>
 </font>
