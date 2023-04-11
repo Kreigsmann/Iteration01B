@@ -137,7 +137,7 @@ Oakshott Typology.
 
     </tr>
   </thead>
-
+  <% if user_signed_in? %>
   <tbody>
     <% @swords.each do |sword| %>
       <tr>
@@ -154,7 +154,7 @@ Oakshott Typology.
     <% end %>
   </tbody>
 </table>
-
+<%end%>
 
 <br>
 <font size="5">
