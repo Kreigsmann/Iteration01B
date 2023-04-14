@@ -1,10 +1,10 @@
-FactoryBot.define do
-    factory :user do
-      id {1}
-      email {"test@user.com"}
-      password {"qwerty"}
+#FactoryBot.define do
+ #   factory :user do
+  #    id {1}
+   #   email {"test@user.com"}
+    #  password {"qwerty"}
       # Add additional fields as required via your User model
-    end
+    #end
   
     # Not used in this tutorial, but left to show an example of different user types
     # factory :admin do
@@ -13,4 +13,4 @@ FactoryBot.define do
     #   password {"qwerty"}
     #   admin {true}
     # end
-  end
+ # end

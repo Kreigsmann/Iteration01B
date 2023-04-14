@@ -13,7 +13,7 @@ RSpec.describe SwordsController, :type => :controller do
         end
 
         context "GET #show" do
-            let!(:sword) { Sword.create(type: "Test type", subtype: "Test subtype", pommel: "Test pommel", grip: "Test grip", steel: "Test steel") }
+            let!(:sword) { Sword.create(type: "Oakshott", subtype: "Number", pommel: "Fishtail", grip: "Oak", steel: "High Carbon") }
             it "returns a success response" do
                 expect(response).to have_http_status(:ok)
             end
