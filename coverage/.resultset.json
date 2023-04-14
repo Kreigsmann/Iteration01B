@@ -8,7 +8,7 @@
           1,
           null,
           1,
-          2,
+          0,
           null,
           null,
           null,
@@ -81,18 +81,6 @@
           null
         ]
       },
-      "/root/Iteration01B/app/models/sword.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
       "/root/Iteration01B/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
@@ -161,6 +149,21 @@
         "branches": {
         }
       },
+      "/root/Iteration01B/app/models/sword.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/root/Iteration01B/app/models/user.rb": {
         "lines": [
           0,
@@ -174,6 +177,6 @@
         }
       }
     },
-    "timestamp": 1681440459
+    "timestamp": 1681442081
   }
 }
