@@ -1,6 +1,12 @@
-<h1>Editing Sword</h1>
+<h1 style="font-family: Old English Text MT">Editing Sword</h1>
+
+<img src="https://static.thenounproject.com/png/8950-200.png">
 
 <%= render 'form', sword: @sword %>
 
-<%= link_to 'Show', @sword %> |
-<%= link_to 'Back', swords_path %>
+<font size="5">
+<strong>
+<%= button_to 'Show', @sword, style: 'background-color: gold; color: white;', method: :get %>
+<%= button_to 'Back', swords_path, style: 'background-color: blue; color: white;', method: :get %>
+</strong>
+</font>

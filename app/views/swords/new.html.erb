@@ -1,5 +1,10 @@
-<h1>New Sword</h1>
-
+<h1 style="font-family: Old English Text MT">New Sword</h1>
+<img src="https://thumbs.dreamstime.com/t/smithy-icon-forge-stithy-blacksmith-symbol-flat-vector-illustration-79777286.jpg">
+<br>
 <%= render 'form', sword: @sword %>
 
-<%= link_to 'Back', swords_path %>
+<font size="5">
+<strong>
+<%= button_to 'Back', swords_path, style:'background-color: red; color: white;', method: :get %>
+</strong>
+</font>

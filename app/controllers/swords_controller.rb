@@ -1,6 +1,6 @@
 class SwordsController < ApplicationController
   before_action :set_sword, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_user!, only: %i[ new edit create update destroy]
   # GET /swords or /swords.json
   def index
     @swords = Sword.all
